@@ -4,7 +4,7 @@ import React from 'react';
 import styles from "../styles/Navbar.module.css"
 
 //Photo
-import avatar from "../images/photo_2022-09-27_14-08-39.jpg"
+import avatar from "../assets/images/photo_2022-09-27_14-08-39.jpg"
 
 const Navbar = () => {
     return (
