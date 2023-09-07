@@ -1,0 +1,101 @@
+.banner {
+    height: calc(100vh - 50px);
+    width: 100%;
+    position: relative;
+    background-color: var(--soft-color);
+    color: var(--light-color);
+    overflow: hidden;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: opacity(.6);
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 600px;
+}
+
+.left h2 {
+    font-size: 80px;
+}
+
+.animationText {
+    background-image: linear-gradient(45deg, #ff9900, #6600cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: moveGradient 5s linear infinite;
+    background-size: 200% 100%;
+    background-position: 100% 50%;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right h3 {
+    font-size: 40px;
+}
+
+.right p {
+    font-size: 20px;
+}
+
+.btn {
+    z-index: 20;
+    width: 40%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: 2px solid var(--light-color);
+    color: var(--light-color);
+    cursor: pointer;
+    transition: all ease .2s;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.1rem;
+}
+
+.btn::before {
+    content: 'Lets go :)';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #111;
+    background-color: var(--secondary-color);
+    top: 0;
+    left: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+}
+
+.btn:hover.btn::before {
+    transform: translateX(100%);
+}

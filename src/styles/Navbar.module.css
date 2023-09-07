@@ -1,6 +1,7 @@
 .navbar {
     display: flex;
-    background-color: #9e9e9e;
+    background-color: var(--main-color);
+    color: var(--light-color);
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
@@ -29,6 +30,10 @@
 
 .list li {
     cursor: pointer;
+}
+
+.list li:hover {
+    text-decoration: underline;
 }
 
 .profile {
