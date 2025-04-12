@@ -13,7 +13,7 @@ const Banner = () => {
                 </div>
                 <div className={styles.right}>
                     <h3 className={styles.animationText2}>Buy now <br/> Pay later</h3>
-                    <p>Lorem ipsum dolor sit amet sed. Kasd diam sit lorem sea ullamcorper feugait dolor sed rebum et.</p>
+                    <p>1 3 4 ipsum dolor sit amet sed. Kasd diam sit lorem sea ullamcorper feugait dolor sed rebum et.</p>
                     <button className={styles.btn}>Buy now</button>
                 </div>
             </div>
